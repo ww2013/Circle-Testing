@@ -27,3 +27,8 @@ jobs:
             echo 'HELLO'
             echo 'World'
             echo 'This is the delivery pipeline'
+      - run:
+          name: Code Has Arrived
+          command: |
+            ls -al
+            echo "======= end file list ======="
