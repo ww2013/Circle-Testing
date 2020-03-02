@@ -21,4 +21,14 @@ jobs:
     steps:
       - checkout
 
-      - run: echo "hello world, how are you?"
+      - run:
+          name: The First Step
+          command: |
+            echo 'HELLO'
+            echo 'World'
+            echo 'This is the delivery pipeline'
+      - run:
+          name: Code Has Arrived
+          command: |
+            ls -al
+            echo "======= end file list ======="
